@@ -4,6 +4,7 @@ function Thumb(props) {
     const [hoeveelheid, setHoeveelheid] = React.useState('');
     return (
 
+        <div className="thumbdiv">
         <a href={props.url}>
         <img
             src={props.imgsrc}
@@ -15,6 +16,7 @@ function Thumb(props) {
             {props.titel}
         </span>
         </a>
+        </div>
     );
 }
 

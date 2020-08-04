@@ -5,27 +5,47 @@ import Slider from "./components/Thumb";
 import Thumb from "./components/Thumb";
 
 function App() {
-  return (
-    <div className="App">
-        <Thumb url="http://nu.nl" imgsrc="https://img.joomcdn.net/742bb7cd2f21bc66f5c2447022a7dab7f6dc3a87_original.jpeg" titel="dit is de titel"></Thumb>
-        <Thumb url="http://nu.nl" imgsrc="https://img.joomcdn.net/742bb7cd2f21bc66f5c2447022a7dab7f6dc3a87_original.jpeg" titel="dit is de titel"></Thumb>
-        <Thumb url="http://nu.nl" imgsrc="https://img.joomcdn.net/742bb7cd2f21bc66f5c2447022a7dab7f6dc3a87_original.jpeg" titel="dit is de titel"></Thumb>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+
+        <div className="body">
+            <div><h1>The Tubes of You!</h1>
+                <p>Welcome to the Tubes of You -- your #1 supplier of cheap unicorn meat.</p>
+            </div>
+            <div className="mainWrapper flex-container">
+
+
+                <div className="main flex-child">
+                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/0td9Z8C4jNU"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                    <h2>Dit is de titel van de video</h2>
+                    <p>Dit is de beschrijving Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis
+                        risus a velit maximus, non tristique enim mattis. Etiam porttitor dapibus luctus. Ut faucibus
+                        interdum augue. Aenean porttitor semper aliquam. Morbi mattis erat quis leo sollicitudin
+                        pellentesque. Integer augue ipsum, interdum sed finibus luctus, laoreet vitae nibh. Integer
+                        efficitur dignissim quam nec iaculis. Morbi eu urna tristique leo iaculis aliquam id nec ligula.
+                        Maecenas interdum molestie enim eget lobortis. Integer quis convallis sem. Suspendisse vitae
+                        hendrerit mauris.
+
+                    </p>
+                </div>
+                <div className="sidebar flex-child">
+                    <Thumb url="http://nu.nl"
+                           imgsrc="https://via.placeholder.com/200x100"
+                           titel="videotitel1"></Thumb>
+                    <Thumb url="http://nu.nl"
+                           imgsrc="https://via.placeholder.com/200x100"
+                           titel="dit is de titel"></Thumb>
+                    <Thumb url="http://nu.nl"
+                           imgsrc="https://via.placeholder.com/200x100"
+                           titel="dit is de titel"></Thumb>
+
+                </div>
+
+            </div>
+        </div>
+    );
 }
 
 export default App;
