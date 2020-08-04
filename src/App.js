@@ -1,21 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Slider from "./components/Thumb";
+// import Slider from "./components/Thumb";
 import Thumb from "./components/Thumb";
+import Helloworld from "./components/Helloworld";
 
 function App() {
     return (
 
         <div className="body">
-            <div><h1>The Tubes of You!</h1>
-                <p>Welcome to the Tubes of You -- your #1 supplier of cheap unicorn meat.</p>
+            <Helloworld></Helloworld>
+
+            <div><img src="https://i.imgur.com/T4qrN8c.png" alt="The Tubes of You logo" height="50px" style={{float : 'left', marginRight : '10px'}} />
+                <h1>The Tubes of You!</h1>
+                <p><i>Welcome to the Tubes of You -- your #1 supplier of cheap unicorn meat.</i></p>
             </div>
             <div className="mainWrapper flex-container">
 
 
                 <div className="main flex-child">
-                    <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/0td9Z8C4jNU"
+                    <iframe width="100%" height="400px" src="https://www.youtube-nocookie.com/embed/0td9Z8C4jNU"
                             frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen></iframe>
@@ -44,6 +48,7 @@ function App() {
                 </div>
 
             </div>
+            <div>&copy; Diederik Schrotelkamp 1998</div>
         </div>
     );
 }

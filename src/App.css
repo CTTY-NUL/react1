@@ -1,5 +1,5 @@
 
-.thumb { height:50px;}
+.thumb { height:100px;}
 .sidebar {  display: flex;
     flex-direction: column;
     /*background-color: red;*/
@@ -7,9 +7,10 @@
 }
 .thumbdiv {
     width: 100px;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
-
+    padding-bottom: 30px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
@@ -25,3 +26,7 @@
     flex: 1;
     /*border: 2px solid yellow;*/
 }
+
+
+
+

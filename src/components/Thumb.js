@@ -10,7 +10,7 @@ function Thumb(props) {
             src={props.imgsrc}
             // alt={props.titel}
             class="thumb"
-            style={{paddingBottom : '20px'}}
+            style={{paddingBottom : '1px'}}
         />
         <span>
             {props.titel}
